@@ -1,0 +1,22 @@
+Package: markPeaks
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Lakhansing Pardeshi
+Maintainer: Lakhansing Pardeshi <lakhanp@um.edu.mo>
+Description: This pacakge is written for annotating regions such as
+    ChIPseq peaks, histone marks or simply a genomic regions with nearest
+    genes. It is written with focus on compact genomes such fungi and 
+    bacteria where intergenic space is very small (1-2kb) and ChIPseq 
+    peaks in tandem or divergent intergenic spaces or overlapping genes
+    may result in false positive when existing methods like ChIPpeakAnno
+    or ChIPseeker are used.
+License: GPL V2
+Encoding: UTF-8
+LazyData: true
+Depends:
+	tidyverse (>= 1.2.1),
+	GenomicRanges (>= 1.34.0),
+	rtracklayer (>= 1.40.3),
+Imports:
+RoxygenNote: 7.1.0
