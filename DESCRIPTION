@@ -1,7 +1,7 @@
 Package: markPeaks
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
+Title: Peak annotation using TxDB
+Version: 0.1.2
 Author: Lakhansing Pardeshi
 Maintainer: Lakhansing Pardeshi <lakhanp@um.edu.mo>
 Description: This pacakge is written for annotating regions such as
@@ -19,4 +19,4 @@ Depends:
 	GenomicRanges (>= 1.34.0),
 	rtracklayer (>= 1.40.3),
 Imports:
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
