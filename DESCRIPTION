@@ -1,7 +1,7 @@
 Package: markPeaks
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.1
+Title: Peak annotation using TxDB
+Version: 0.1.2
 Author: Lakhansing Pardeshi
 Maintainer: Lakhansing Pardeshi <lakhanp@um.edu.mo>
 Description: This pacakge is written for annotating regions such as
