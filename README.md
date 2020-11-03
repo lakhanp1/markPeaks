@@ -80,7 +80,7 @@ txInfo <- dplyr::filter(txInfo, !txType %in% c("tRNA", "rRNA", "snRNA", "snoRNA"
 peakAn <- markPeaks::annotate_peaks(
   peakFile = file_peaks,
   txdb = txDb,
-  txIds = txInfo$TXID,						## optional
+  txIds = txInfo$TXID,                      ## optional arg
   fileFormat = "narrowPeak",
   promoterLength = 500,
   upstreamLimit = 1000,
@@ -88,14 +88,14 @@ peakAn <- markPeaks::annotate_peaks(
   includeFractionCut = 0.7,
   bindingInGene = FALSE,
   insideSkewToEndCut = 0.7,
-  blacklistRegions = file_blacklist,		## optional
+  blacklistRegions = file_blacklist,        ## optional arg
   removePseudo = TRUE,
-  output = file_output						## optional
+  output = file_output                      ## optional arg
 )
 
 ```
 ______
 
 ### License
-MIT
+GPL V2
 
