@@ -7,7 +7,7 @@ overlapping genes may result in false positive when existing methods like
 `ChIPpeakAnno` or `ChIPseeker` are used.
 ______
 
-### Install
+## Install
 
 ```r
 library(devtools)
@@ -15,7 +15,7 @@ devtools::install_github("lakhanp1/markPeaks")
 ```
 ______
 
-### Usage
+## Usage
 `markPeaks` uses `TxDB` package to annotate the peaks or genomic regions. 
 For demonstration purpose, *A. nidulans* `TxDB` package is used in example below.
 
