@@ -152,7 +152,7 @@ gene_level_peak_annotation <- function(
 
   ## optionally save the data
   if(!is.null(outFile)){
-    readr::write_tsv(x = finalDf, path = outFile, col_names = T)
+    readr::write_tsv(x = finalDf, file = outFile, col_names = T)
     cat("Added TF binding information for : ", sampleId, "\n")
   }
 

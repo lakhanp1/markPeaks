@@ -139,7 +139,7 @@ annotate_peaks <- function(peakFile, fileFormat = "narrowPeak",
 
   ## optionally store the data
   if(!is.null(output)){
-    readr::write_tsv(x = as.data.frame(mcols(peakTargetsGr)), path = output)
+    readr::write_tsv(x = as.data.frame(mcols(peakTargetsGr)), file = output)
   }
 
   return(peakTargetsGr)
