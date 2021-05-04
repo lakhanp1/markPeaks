@@ -97,7 +97,7 @@ annotate_peaks <- function(peakFile, fileFormat = "narrowPeak",
   }
 
   if(is.null(mcols(peaks)$peak)){
-    mcols(peaks)$peak <- as.integer(width(peaks) / 2)
+    mcols(peaks)$peak <- round(width(peaks) / 2)
   }
 
   mcols(peaks)$peakRegion <- paste(
@@ -108,7 +108,7 @@ annotate_peaks <- function(peakFile, fileFormat = "narrowPeak",
   if(summitRegion > 0){
     ## start(peaks) + peaks$peak
     peaks <- GenomicRanges::resize(
-      x = GenomicRanges::shift(x = peaks, shift = peaks$peak - summitRegion),
+      x = GenomicRanges::shift(x = peaks, shift = peaks$peak - round(summitRegion/2)),
       width = summitRegion, fix = "start"
     )
 
